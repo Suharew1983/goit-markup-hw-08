@@ -1,0 +1,38 @@
+.basement {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--basement-color);
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+  }
+
+  &__link-map {
+    color: var(--wite-text-color);
+    transition: color var(--animation);
+  }
+
+  &__link-mail {
+    color: var(--address-text-color);
+    transition: color var(--animation);
+  }
+
+  &__link-phone {
+    color: var(--address-text-color);
+    transition: color var(--animation);
+  }
+}

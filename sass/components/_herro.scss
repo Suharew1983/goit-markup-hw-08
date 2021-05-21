@@ -1,0 +1,46 @@
+.herro {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background: var(--basement-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/herro-img.jpg);
+  max-width: 1600px;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    max-width: 696px;
+    color: var(--wite-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    padding: 10px 32px;
+    background-color: var(--accent-color);
+    color: var(--wite-text-color);
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,32 @@
+.social-icons {
+  display: inline-flex;
+  list-style: none;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: fill var(--animation), background-color var(--animation);
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--accent-color);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-icons__svg {
+  fill: var(--socials-icon);
+  transition: fill var(--animation);
+
+  .social-icons__link:hover &,
+  .social-icons__link:focus & {
+    fill: var(--wite-text-color);
+  }
+}

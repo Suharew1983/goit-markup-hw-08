@@ -1,0 +1,18 @@
+.logo {
+  color: var(--blak-text-color);
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  transition: color var(--animation);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.logo--accent {
+  color: var(--accent-color);
+}
