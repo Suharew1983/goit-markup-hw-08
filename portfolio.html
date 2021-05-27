@@ -21,7 +21,7 @@
   <body class="page">
     <!--Верхняя линия-->
 
-    <header class="head">
+    <!-- <header class="head">
       <div class="container__nav">
         <nav class="main-nav">
           <a href="./index.html" class="logo"
@@ -70,13 +70,13 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!--Основное содержимое-->
     <main>
       <section class="portfolio">
         <div class="container">
           <h1 class="portfolio__title visually-hidden">Портфолио</h1>
-          <ul class="filters__list">
+           <ul class="filters__list">
             <li class="filters__item">
               <button type="buttons" class="filters__btn">
                 Веб-сайты
@@ -107,12 +107,25 @@
               <a href="" class="projects__link">
                 <article class="projects__article">
                   <div class="projects__thumb">
-                    <img
+                    <picture>
+                      <source srcset="
+                         ./images/desktop/tehnograb.jpg 1x,
+                         ./images/desktop/tehnograb@2x.jpg 2x
+                         " media="(min-width: 1200px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/tablet/tehnograb.jpg 1x,
+                          ./images/tablet/tehnograb@2x.jpg 2x
+                        " media="(min-width: 768px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/mobile/tehnograb.jpg  1x,
+                          ./images/mobile/tehnograb@2x.jpg 2x
+                        " media="(max-width: 767px)" type="image/jpg" />
+                      <img 
                       src="./images/tehnograb.jpg"
-                      alt="Экран ноутбука с тремя людьми"
-                      width="370"
-                      class="projects__image"
-                    />
+                      alt="Экран ноутбука с тремя людьми" 
+                      />
+                    </picture>
+                    
                     <div class="projects__overlay">
                       <p class="projects__text">
                         Технокряк это современная площадка распространения
@@ -134,12 +147,24 @@
               <a href="" class="projects__link">
                 <article class="projects__article">
                   <div class="projects__thumb">
-                    <img
+                    <picture>
+                      <source srcset="
+                         ./images/desktop/poster.jpg 1x,
+                         ./images/desktop/poster@2x.jpg 2x
+                         " media="(min-width: 1200px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/tablet/poster.jpg 1x,
+                          ./images/tablet/poster@2x.jpg 2x
+                        " media="(min-width: 768px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/mobile/poster.jpg  1x,
+                          ./images/mobile/poster@2x.jpg 2x
+                        " media="(max-width: 767px)" type="image/jpg" />
+                      <img 
                       src="./images/poster.jpg"
-                      alt="Экран ноутбука с тремя людьми"
-                      width="370"
-                      class="card__image"
-                    />
+                      alt="Постер" 
+                      />
+                   
                     <div class="projects__overlay">
                       <p class="projects__text">
                         Технокряк это современная площадка распространения
@@ -163,12 +188,24 @@
               <a href="" class="projects__link">
                 <article class="projects__article">
                   <div class="projects__thumb">
-                    <img
-                      src="./images/seafood.jpg"
-                      alt="Экран ноутбука с тремя людьми"
-                      width="370"
-                      class="card__image"
+<picture>
+                    <source srcset="
+                       ./images/desktop/seafood.jpg 1x,
+                       ./images/desktop/seafood@2x.jpg 2x
+                       " media="(min-width: 1200px)" type="image/jpg" />
+                    <source srcset="
+                        ./images/tablet/seafood.jpg 1x,
+                        ./images/tablet/seafood@2x.jpg 2x
+                      " media="(min-width: 768px)" type="image/jpg" />
+                    <source srcset="
+                        ./images/mobile/seafood.jpg  1x,
+                        ./images/mobile/seafood@2x.jpg 2x
+                      " media="(max-width: 767px)" type="image/jpg" />
+                    <img 
+                     src="./images/seafood.jpg"
+                    alt="Ресторан морская еда" 
                     />
+</picture>
                   <div class="projects__overlay">
                     <p class="projects__text">
                         Технокряк это современная площадка распространения
@@ -190,12 +227,24 @@
               <a href="" class="projects__link">
                 <article class="projects__article">
                   <div class="projects__thumb">
-                    <img
-                      src="./images/headphones.jpg"
-                      alt="Экран ноутбука с тремя людьми"
-                      width="370"
-                      class="card__image"
-                    />
+                    <picture>
+                      <source srcset="
+                         ./images/desktop/headphones.jpg 1x,
+                         ./images/desktop/headphones@2x.jpg 2x
+                         " media="(min-width: 1200px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/tablet/headphones.jpg 1x,
+                          ./images/tablet/headphones@2x.jpg 2x
+                        " media="(min-width: 768px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/mobile/headphones.jpg  1x,
+                          ./images/mobile/headphones@2x.jpg 2x
+                        " media="(max-width: 767px)" type="image/jpg" />
+                      <img src="./images/headphones.jpg" 
+                      alt="Ресторан морская еда" 
+                      />
+                    </picture>
+                    
                     <div class="projects__overlay">
                       <p class="projects__text">
                         Технокряк это современная площадка распространения
@@ -217,12 +266,25 @@
               <a href="" class="projects__link">
                 <article class="projects__article">
                   <div class="projects__thumb">
-                    <img
-                      src="./images/boxes.jpg"
-                      alt="Экран ноутбука с тремя людьми"
-                      width="370"
-                      class="card__image"
-                    />
+
+                    <picture>
+                      <source srcset="
+                         ./images/desktop/boxes.jpg 1x,
+                         ./images/desktop/boxes@2x.jpg 2x
+                         " media="(min-width: 1200px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/tablet/boxes.jpg 1x,
+                          ./images/tablet/boxes@2x.jpg 2x
+                        " media="(min-width: 768px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/mobile/boxes.jpg  1x,
+                          ./images/mobile/boxes@2x.jpg 2x
+                        " media="(max-width: 767px)" type="image/jpg" />
+                      <img src="./images/boxes.jpg"
+                       alt="Коробки"
+                        />
+                    </picture>
+                    
                     <div class="projects__overlay">
                       <p class="projects__text">
                         Технокряк это современная площадка распространения
@@ -244,12 +306,25 @@
               <a href="" class="projects__link">
                 <article class="projects__article">
                   <div class="projects__thumb">
-                    <img
+                    <picture>
+                      <source srcset="
+                         ./images/desktop/inspiration.jpg 1x,
+                         ./images/desktop/inspiration@2x.jpg 2x
+                         " media="(min-width: 1200px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/tablet/inspiration.jpg 1x,
+                          ./images/tablet/inspiration@2x.jpg 2x
+                        " media="(min-width: 768px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/mobile/inspiration.jpg  1x,
+                          ./images/mobile/inspiration@2x.jpg 2x
+                        " media="(max-width: 767px)" type="image/jpg" />
+                      <img 
                       src="./images/inspiration.jpg"
-                      alt="Экран ноутбука с тремя людьми"
-                      width="370"
-                      class="card__image"
-                    />
+                       alt="Монитор" 
+                       />
+                    </picture>
+                    
                   <div class="projects__overlay">
                     <p class="projects__text">
                         Технокряк это современная площадка распространения
@@ -273,12 +348,25 @@
               <a href="" class="projects__link">
                 <article class="projects__article">
                   <div class="projects__thumb">
-                    <img
+                    <picture>
+                      <source srcset="
+                         ./images/desktop/magazine.jpg 1x,
+                         ./images/desktop/magazine@2x.jpg 2x
+                         " media="(min-width: 1200px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/tablet/magazine.jpg 1x,
+                          ./images/tablet/magazine@2x.jpg 2x
+                        " media="(min-width: 768px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/mobile/magazine.jpg  1x,
+                          ./images/mobile/magazine@2x.jpg 2x
+                        " media="(max-width: 767px)" type="image/jpg" />
+                      <img 
                       src="./images/magazine.jpg"
-                      alt="Экран ноутбука с тремя людьми"
-                      width="370"
-                      class="card__image"
-                    />
+                      alt="Журнал" 
+                      />
+                    </picture>
+                    
                     <div class="projects__overlay">
                       <p class="projects__text">
                         Технокряк это современная площадка распространения
@@ -300,13 +388,25 @@
               <a href="" class="projects__link">
                 <article class="projects__article">
                   <div class="projects__thumb">
-                    <img
-                      src="./images/project.jpg"
-                      alt="Экран ноутбука с тремя людьми"
-                      width="370"
-                      class="card__image"
-                    />
-                    <div class="projects__overlay">
+                    <picture>
+                    <source srcset="
+                       ./images/desktop/project.jpg 1x,
+                       ./images/desktop/project@2x.jpg 2x
+                       " media="(min-width: 1200px)" type="image/jpg" />
+                    <source srcset="
+                        ./images/tablet/project.jpg 1x,
+                        ./images/tablet/project@2x.jpg 2x
+                      " media="(min-width: 768px)" type="image/jpg" />
+                    <source srcset="
+                        ./images/mobile/project.jpg  1x,
+                        ./images/mobile/project@2x.jpg 2x
+                      " media="(max-width: 767px)" type="image/jpg" />
+                    <img 
+                    src="./images/project.jpg"
+                    alt="Проект"
+                     />
+                    </picture>
+                  <div class="projects__overlay">
                       <p class="projects__text">
                         Технокряк это современная площадка распространения
                         коронавируса. Компании используют эту платформу для
@@ -327,12 +427,25 @@
               <a href="" class="projects__link">
                 <article class="projects__article">
                   <div class="projects__thumb">
-                    <img
+                    <picture>
+                      <source srcset="
+                         ./images/desktop/groving.jpg 1x,
+                         ./images/desktop/groving@2x.jpg 2x
+                         " media="(min-width: 1200px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/tablet/groving.jpg 1x,
+                          ./images/tablet/groving@2x.jpg 2x
+                        " media="(min-width: 768px)" type="image/jpg" />
+                      <source srcset="
+                          ./images/mobile/groving.jpg  1x,
+                          ./images/mobile/groving@2x.jpg 2x
+                        " media="(max-width: 767px)" type="image/jpg" />
+                      <img 
                       src="./images/groving.jpg"
-                      alt="Экран ноутбука с тремя людьми"
-                      width="370"
-                      class="card__image"
-                    />
+                      alt="Рост" 
+                      />
+                    </picture>
+                    
                     <div class="projects__overlay">
                       <p class="projects__text">
                         Технокряк это современная площадка распространения
@@ -357,60 +470,61 @@
     <!--Подвал-->
     <footer class="basement">
       <div class="basement__container">
-        <div class="basement__contacts">
-          <a href="./index.html" class="basement__logo ">
-            <span class="basement--accent">Web</span>Studio
-          </a>
-          <address class="basement__info">
-            <ul class="basement__list">
-              <li>
-                <a class="basement__link-map" href="https://goo.gl/maps/DxFtaffAK3NUuUXk9" target="_blank"
-                  rel="noopener noreferer">г. Киев, пр-т Леси Украинки, 26</a>
+        <div class=basement__join>
+          <div class="basement__contacts">
+            <a href="./index.html" class="basement__logo ">
+              <span class="basement--accent">Web</span>Studio
+            </a>
+            <address class="basement__info">
+              <ul class="basement__list">
+                <li>
+                  <a class="basement__link-map" href="https://goo.gl/maps/DxFtaffAK3NUuUXk9" target="_blank"
+                    rel="noopener noreferer">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li>
+                  <a href="mailto:info@devstudio.com" class="basement__link-mail">info@devstudio.com</a>
+                </li>
+                <li>
+                  <a href="tel:+380961111111" class="basement__link-phone">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+    
+          <div class="footer-social">
+            <h2 class="footer-social__title">Присоединяйтесь</h2>
+            <ul class="footer-social__list">
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="#" target="_blank" rel="noopener noreferer">
+                  <svg class="footer-social__svg" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="mailto:info@devstudio.com" class="basement__link-mail">info@devstudio.com</a>
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="#" target="_blank" rel="noopener noreferer">
+                  <svg class="footer-social__svg" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="tel:+380961111111" class="basement__link-phone">+38 096 111 11 11</a>
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="#" target="_blank" rel="noopener noreferer">
+                  <svg class="footer-social__svg" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="#" target="_blank" rel="noopener noreferer">
+                  <svg class="footer-social__svg" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-    
-        <div class="footer-social">
-          <h2 class="footer-social__title">Присоединяйтесь</h2>
-          <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="#" target="_blank" rel="noopener noreferer">
-                <svg class="footer-social__svg" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="#" target="_blank" rel="noopener noreferer">
-                <svg class="footer-social__svg" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="#" target="_blank" rel="noopener noreferer">
-                <svg class="footer-social__svg" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="#" target="_blank" rel="noopener noreferer">
-                <svg class="footer-social__svg" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-    
         <div class="form">
           <form class="footer-form">
             <label class="footer-form__label" for="input-mail"><span class="footer-form__title">Подпишитесь на
