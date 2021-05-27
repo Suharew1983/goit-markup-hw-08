@@ -381,6 +381,7 @@ img {
 
 .features {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .features__item {
@@ -448,6 +449,7 @@ img {
   .features {
     display: flex;
     padding-top: 94px;
+    padding-bottom: 0px;
   }
   .features__list {
     display: flex;
