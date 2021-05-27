@@ -38,6 +38,60 @@
               <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
+
+          <button type="button" class="menu__btn" data-menu-button aria-controls="menu-container">
+            <svg class="menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu__icon--menu" href="./images/icons.svg#icon-menu_40px"></use>
+              <use class="menu__icon--close is-open" href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          
+          <div class="mobile-menu" data-menu>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студия</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="mobile-menu__wrap">
+              <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__contact-item">
+                  <a href="tel:+380961111111" class="link mobile-menu__phone">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="mobile-menu__contact-item">
+                  <a href="mailto:info@devstudio.com" class="mobile-menu__mail">
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="mobile-menu__socials">
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link" target="_blank" rel="noopener noreferrer">Instagram
+                  </a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link" target="_blank" rel="noopener noreferrer">Twitter
+                  </a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link" target="_blank" rel="noopener noreferrer">Facebook
+                  </a>
+                </li>
+          
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link" target="_blank" rel="noopener noreferrer">LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </div>
+          
         </nav>
 
         <ul class="auth__nav">
@@ -66,15 +120,8 @@
             >
           </li>
         </ul>
+           
       </div>
-
-      <button type="button" class="menu__btn" data-menu-button>
-        <svg class="menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-          <use class="menu__icon--menu" href="./images/icons.svg#icon-menu_40px"></use>
-          <use class="menu__icon--close-menu" href="./images/icons.svg#icon-close_40px"></use>
-        </svg>
-      </button>
-
     </header>
 
     <main>

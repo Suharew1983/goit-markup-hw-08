@@ -19,58 +19,101 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
+    
     <!--Верхняя линия-->
 
-    <!-- <header class="head">
+    <header class="nav">
       <div class="container__nav">
         <nav class="main-nav">
-          <a href="./index.html" class="logo"
-            ><span class="logo--accent">Web</span>Studio</a
-          >
-
+          <a href="./index.html" class="logo"><span class="logo--accent">Web</span>Studio
+          </a>
+    
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студия </a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link--current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="site-nav__link--current">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
+    
+          <button type="button" class="menu__btn" data-menu-button aria-controls="menu-container">
+            <svg class="menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu__icon--menu" href="./images/icons.svg#icon-menu_40px"></use>
+              <use class="menu__icon--close is-open" href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+    
+          <div class="mobile-menu" data-menu>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link">Студия</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current">Портфолио</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="mobile-menu__wrap">
+              <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__contact-item">
+                  <a href="tel:+380961111111" class="link mobile-menu__phone">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="mobile-menu__contact-item">
+                  <a href="mailto:info@devstudio.com" class="mobile-menu__mail">
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="mobile-menu__socials">
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link" target="_blank" rel="noopener noreferrer">Instagram
+                  </a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link" target="_blank" rel="noopener noreferrer">Twitter
+                  </a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link" target="_blank" rel="noopener noreferrer">Facebook
+                  </a>
+                </li>
+    
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link" target="_blank" rel="noopener noreferrer">LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </div>
+    
         </nav>
-
+    
         <ul class="auth__nav">
           <li class="auth__item">
             <a class="auth__link" href="mailto:info@devstudio.com">
-              <svg
-                class="address-icon address-icon__phone"
-                width="16"
-                height="12"
-              >
+              <svg class="address-icon address-icon__phone" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com</a
-            >
+              info@devstudio.com</a>
           </li>
           <li class="auth__item">
             <a class="auth__link" href="tel:+380961111111">
-              <svg
-                class="address-icon address-icon__mail"
-                width="10"
-                height="16"
-              >
+              <svg class="address-icon address-icon__mail" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11</a
-            >
+              +38 096 111 11 11</a>
           </li>
         </ul>
+    
       </div>
-    </header> -->
+    </header>
     <!--Основное содержимое-->
     <main>
       <section class="portfolio">
@@ -188,7 +231,7 @@
               <a href="" class="projects__link">
                 <article class="projects__article">
                   <div class="projects__thumb">
-<picture>
+                  <picture>
                     <source srcset="
                        ./images/desktop/seafood.jpg 1x,
                        ./images/desktop/seafood@2x.jpg 2x
@@ -205,7 +248,7 @@
                      src="./images/seafood.jpg"
                     alt="Ресторан морская еда" 
                     />
-</picture>
+                  </picture>
                   <div class="projects__overlay">
                     <p class="projects__text">
                         Технокряк это современная площадка распространения
