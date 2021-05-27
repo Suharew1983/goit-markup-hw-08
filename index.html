@@ -18,9 +18,9 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body class="page">
+  <body class="page data-menu-page">
     <!--Верхняя линия-->
-    <!-- <header class="nav">
+    <header class="nav">
       <div class="container__nav">
         <nav class="main-nav">
           <a href="./index.html" class="logo"
@@ -68,7 +68,15 @@
         </ul>
       </div>
 
-          </header> -->
+      <button type="button" class="menu__btn" data-menu-button>
+        <svg class="menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="menu__icon--menu" href="./images/icons.svg#icon-menu_40px"></use>
+          <use class="menu__icon--close-menu" href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+
+    </header>
+
     <main>
       <!--Герой-->
      <section class="herro">
@@ -771,5 +779,6 @@
        </div>
      </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

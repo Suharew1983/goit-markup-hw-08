@@ -123,10 +123,28 @@ img {
 .container__nav {
   display: flex;
   align-items: center;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container__nav {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__nav {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__nav {
+    max-width: 1200px;
+  }
 }
 
 .main-nav {
@@ -148,8 +166,20 @@ img {
 }
 
 .site-nav {
-  display: flex;
+  display: none;
   margin-left: 93px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: flex;
+  }
 }
 
 .site-nav__link:hover, .site-nav__link:focus {
@@ -197,13 +227,45 @@ img {
 }
 
 .auth__nav {
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 
-.auth__item:not(:first-child) {
-  display: flex;
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .auth__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth__nav {
+    display: flex;
+    flex-direction: unset;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth__item:not(:last-child) {
+    display: flex;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .auth__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth__item:not(:first-child) {
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 0px;
+  }
 }
 
 .auth__link {
@@ -1342,5 +1404,45 @@ img {
 .modal-input__input:hover + .modal-input__img,
 .modal-input__input:focus + .modal-input__img {
   fill: var(--accent-color);
+}
+
+.menu__btn {
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__btn {
+    display: none;
+  }
+}
+
+.menu__btn:hover .menu__icon,
+.menu__btn:focus .menu__icon {
+  fill: var(--accent-color);
+}
+
+.nav {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.menu__icon--close-menu {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

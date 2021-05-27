@@ -1,0 +1,35 @@
+.menu__btn {
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu__btn:hover .menu__icon,
+.menu__btn:focus .menu__icon {
+  fill: var(--accent-color);
+}
+
+.nav {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.menu__icon--close-menu {
+  display: none;
+}
