@@ -1167,6 +1167,7 @@ img {
   color: var(--wite-text-color);
   padding-left: 56px;
   margin-top: 30px;
+  margin: 0 auto;
 }
 
 .backdrop {
@@ -1184,9 +1185,9 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
-  max-width: 528px;
-  min-height: 581px;
+  width: 95%;
+  max-width: 450px;
+  min-height: 609px;
   padding: 40px 30px;
   background-color: #fff;
   border-radius: 4px;
@@ -1195,44 +1196,54 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 100%;
+    max-width: 528px;
+    min-height: 581px;
+  }
+}
+
 .modal__title {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  padding: 0;
   margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #212121;
 }
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
 }
 
-.modal-forms__container {
+.modal-forms {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
-.modal-forms__position {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.modal-forms__container {
+  margin-bottom: 30px;
 }
 
 .modal-forms__label {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin-bottom: 4px;
-  padding: 0;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .modal-forms__comment {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1301,23 +1312,19 @@ img {
 }
 
 .modal-input {
-  display: flex;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .modal-input__input {
-  display: inline-block;
-  position: relative;
-  padding: 0;
   margin: 0;
   padding-left: 42px;
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   transition: border var(--animation);
-  margin-bottom: 10px;
 }
 
 .modal-input__input:hover, .modal-input__input:focus {
