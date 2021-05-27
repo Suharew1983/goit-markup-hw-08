@@ -942,6 +942,10 @@ img {
   transform: translateY(0);
 }
 
+.projects__content {
+  flex-grow: 1;
+}
+
 .basement__logo {
   color: var(--wite-text-color);
   font-family: var(--title-font);
